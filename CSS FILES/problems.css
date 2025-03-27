@@ -1,0 +1,116 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf4e9; /* Light green background (Original Theme) */
+    text-align: center;
+  }
+  
+  /* Header */
+  header {
+    background-color: #2c6e49; /* Dark green */
+    color: white;
+    padding: 20px 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin: 0 15px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #58d68d; /* Light green */
+    color: white;
+    padding: 50px 20px;
+    border-bottom: 5px solid #2c6e49;
+  }
+  
+  .hero h1 {
+    font-size: 34px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  /* Problems Section */
+  .problems-container {
+    max-width: 900px;
+    margin: 40px auto;
+    text-align: left;
+  }
+  
+  /* Problem Cards */
+  .problem-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    margin-bottom: 20px;
+    cursor: pointer; /* Indicates it can be clicked */
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    width: 100%; /* Uses full width within the container */
+  }
+  
+  /* Problem Heading */
+  .problem-heading {
+    background: none;
+    color: #2c6e49; /* Dark green */
+    padding: 18px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  
+  /* Underline animation on hover */
+  .problem-heading:hover {
+    border-bottom: 2px solid #2c6e49; /* Dark green underline */
+  }
+  
+  /* Scroll-down animation for description */
+  .problem-description {
+    background: #f8f9fa; /* Light grey for a professional look */
+    padding: 0 18px;
+    font-size: 16px;
+    color: #333;
+    display: none;
+    border-top: 2px solid #2c6e49;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  }
+  
+  /* Expand when active */
+  .problem-card.active .problem-description {
+    display: block;
+    max-height: 500px;
+    padding: 18px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .problems-container {
+      width: 90%;
+    }
+  }
+  

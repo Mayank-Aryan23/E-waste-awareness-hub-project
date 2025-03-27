@@ -1,0 +1,107 @@
+/* General body and typography styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #eaf4e9; /* Light green background */
+}
+
+header {
+  background-color: #2c6e49; /* Dark green for the header */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+header nav ul li a.active {
+  font-weight: bold;
+}
+
+.hero {
+  background-color: #58d68d; /* Light green background for the hero section */
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 5px solid #2c6e49; /* Dark green border at the bottom */
+}
+
+.hero h1 {
+  font-size: 36px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+.content {
+  padding: 30px;
+}
+
+.section {
+  background-color: white;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; /* Rounded corners for a softer feel */
+}
+
+.section h2 {
+  font-size: 28px;
+  color: #2c6e49; /* Dark green color for headings */
+}
+
+.section ul {
+  line-height: 1.8;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+  background-color: #2c6e49; /* Dark green footer */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #ecf0f1;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Make image clickable and responsive */
+.responsive-image {
+  width: 100%;
+  max-width: 600px; /* Keeps image size reasonable */
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer; /* Show cursor pointer to indicate it's clickable */
+  display: block;
+  margin: 0 auto;
+}

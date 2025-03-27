@@ -1,0 +1,135 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #eaf4e9; /* Light eco-friendly green */
+  }
+  
+  /* Header & Navigation */
+  header {
+    background-color: #2c6e49;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+  }
+  
+  header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  header nav ul li a.active {
+    font-weight: bold;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background-color: #58d68d;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    border-bottom: 5px solid #2c6e49;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+  }
+  
+  /* Ideas Container */
+  .ideas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  /* Idea Card */
+  .idea-card {
+    background-color: white;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-left: 5px solid #2e8b57;  /* Green accent border */
+    cursor: pointer;
+    margin-bottom: 15px;
+  }
+  
+  .idea-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .idea-card h2 {
+    font-size: 20px;
+    color: #2c6e49;
+    margin: 0;
+  }
+  
+  .expand-indicator {
+    color: #777;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  /* Hidden Description */
+  .idea-description {
+    display: none;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+  }
+  
+  .idea-description p {
+    color: #555;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Classy URL Styling */
+  .site-link {
+    display: block;
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px;
+    transition: color 0.3s ease;
+  }
+  
+  .site-link:hover {
+    color: #1a6f47;
+    text-decoration: underline;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #2c6e49;
+    color: white;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  footer p {
+    font-size: 14px;
+  }
+  

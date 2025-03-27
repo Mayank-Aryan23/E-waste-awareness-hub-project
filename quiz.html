@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Take a Quiz - E-Waste Awareness</title>
+  <link rel="stylesheet" href="/CSS FILES/quiz.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header>
+    <nav>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="learn.html">Learn</a></li>
+        <li><a href="infographic.html">Infographics</a></li>
+        <li><a href="video.html">Videos</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="readarticles.html">Read Articles</a></li>
+        <li><a href="quiz.html" class="active">Quiz</a></li>
+        <li><a href="problems.html">Problems</a></li>
+        <li><a href="submitideas.html">Submit Ideas</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section for Quiz Page -->
+  <section class="hero">
+    <h1>Take a Quiz on E-Waste Awareness</h1>
+    <p>Test your knowledge on various topics related to e-waste and its environmental impact!</p>
+  </section>
+
+  <section>
+    <br>
+    <!-- User Input for Name -->
+    <label for="username" class="input-label">Enter your name for the certificate:</label>
+    <input type="text" id="username" class="input-field" placeholder="Your Name" required>
+
+    <!-- Certificate Container -->
+    <div id="certificate-container">
+        <div id="certificate">
+            <h2 class="certificate-title">Certificate of Achievement</h2>
+            <p class="certificate-text">This is to certify that</p>
+            <h1 id="certificate-name" class="certificate-name"></h1>
+            <p class="certificate-text">has successfully completed the quiz on</p>
+            <h2 id="certificate-topic" class="certificate-topic"></h2>
+            <p class="certificate-score">With a perfect score of 100%!</p>
+        </div>
+        <button id="download-btn" class="download-btn">Download Certificate</button>
+    </div>
+
+
+
+
+
+<!--modification-->
+  </section>
+
+  <!-- Quiz Topics Selection -->
+  <section class="content">
+    <h2>Select a Topic to Begin the Quiz</h2>
+
+    <div class="quiz-topics">
+      <div class="quiz-topic-card" onclick="startQuiz('topic1')">
+        <h3>E-Waste Basics</h3>
+        <p>Learn the fundamentals about electronic waste and its impact on the environment.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic2')">
+        <h3>Environmental Impact</h3>
+        <p>Understand the environmental consequences of improper e-waste disposal.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic3')">
+        <h3>Recycling E-Waste</h3>
+        <p>Test your knowledge on the process of recycling e-waste for sustainability.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic4')">
+        <h3>Health Effects of E-Waste</h3>
+        <p>Learn about the harmful health effects of e-waste on humans and wildlife.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic5')">
+        <h3>Global E-Waste Statistics</h3>
+        <p>Explore global statistics about e-waste generation and management.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic6')">
+        <h3>UN Sustainable Consumption and Production (SCP) Programme</h3>
+        <p>The UN published article. Refer to the "Read Articles" page to read it.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic7')">
+        <h3>WHO on E-waste</h3>
+        <p>The WHO published article. Refer to the "Read Articles" page to read it.</p>
+      </div>
+      <div class="quiz-topic-card" onclick="startQuiz('topic8')">
+        <h3>Status of E-Waste in India- A Review</h3>
+        <p>Pdf provided in Resources Section. Refer to the "Resources" page to read it.</p>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- Quiz Questions Section (Initially Hidden) -->
+    <div id="quiz-section" class="quiz-section">
+      <h3 id="quiz-title">Quiz on E-Waste Basics</h3>
+      <form id="quiz-form">
+        <div id="questions-container"></div>
+        <button type="submit" class="submit-btn">Submit Answers</button>
+      </form>
+      <div id="quiz-result" class="quiz-result"></div>
+    </div>
+  </section>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 E-Waste Awareness Hub | All Rights Reserved</p>
+  </footer>
+
+  <script src="/JS FILES/quizes.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+
+
+</body>
+</html>
